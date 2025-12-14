@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Buea WordPress Mockup Image Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Starry Background -->
+    <div class="stars" id="stars"></div>
+    
+    <!-- Minimal Header -->
+    <div class="header">
+        <div class="logo">
+            <i class=""><img src="https://firebasestorage.googleapis.com/v0/b/i-to-u.appspot.com/o/publicimage%2F1001152954.png?alt=media&token=d0077ccc-cb13-40ae-a8c2-375f86adbf7c" height="10%" width="10%">
+   
+        </div>
+        <div class="controls">
+            <button class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </div>
+    
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Gallery Controls -->
+        <div class="gallery-controls">
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchInput" placeholder="Search images...">
+            </div>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="collar-shirts">Collar Shirts</button>
+                <button class="filter-btn" data-filter="hoodies">Hoodies/Polova</button>
+                <button class="filter-btn" data-filter="round-neck">Round Neck Shirts</button>
+            </div>
+        </div>
+        
+        <!-- Image Gallery -->
+        <div class="gallery" id="imageGallery">
+            <!-- Images will be dynamically added here -->
+        </div>
+    </div>
+    
+    <!-- Image Modal -->
+    <div class="modal" id="imageModal">
+        <button class="modal-close" id="modalClose">
+            <i class="fas fa-times"></i>
+        </button>
+        <button class="image-nav nav-prev" id="prevImage">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="image-nav nav-next" id="nextImage">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        <div class="modal-content">
+            <img class="modal-image" id="modalImage" src="" alt="">
+            <div class="modal-info">
+                <span id="modalTitle"></span>
+                <button class="download-btn" id="modalDownload">
+                    <i class="fas fa-download"></i> Download
+                </button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+    </body>
+    </html>
