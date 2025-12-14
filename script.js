@@ -3,7 +3,7 @@
         const images = [
             {
                 id: 1,
-                title: "T-shirt black",
+                title: "T-shirt Black",
                 description: "front and back",
                 category: "collar-shirts",
                 url: "https://firebasestorage.googleapis.com/v0/b/i-to-u.appspot.com/o/publicimage%2F1001152967.jpg?alt=media&token=c49dd5a9-e4dc-4b09-9503-616af972efda",
